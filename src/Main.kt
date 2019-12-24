@@ -1,15 +1,15 @@
 fun main() {
-    genPrimeNo2()
+    genPrimeNo()
 }
 
-fun genPrimeNo2(){
+fun genPrimeNo(){
     val primeNumbers = mutableListOf<Int>()
 
     var no = 2
 
     while (primeNumbers.size < 10005) {
         var flag = false
-        for (i in 2..no / 2) { // condition for nonprime number
+        for (i in 2..no / 2) { // condition for non prime number
             if (no % i == 0) {
                 flag = true
                 break
@@ -20,8 +20,8 @@ fun genPrimeNo2(){
         no++
     }
 
-    println("Size: ${primeNumbers.size}")
-    println(primeNumbers)
+    // println("Size: ${primeNumbers.size}")
+    // println(primeNumbers)
 
     while (true) {
         print("Enter any number between 0 -10000 (default 0): ")
